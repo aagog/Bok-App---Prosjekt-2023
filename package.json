@@ -1,0 +1,25 @@
+{
+  "name": "prosjekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Demo.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leatomine123/prosjekt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leatomine123/prosjekt/issues"
+  },
+  "homepage": "https://github.com/leatomine123/prosjekt#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
