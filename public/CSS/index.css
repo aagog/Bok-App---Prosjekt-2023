@@ -7,16 +7,22 @@ body {
     
   }
 
-  h4{
-    color:#f1f1f1;
-  }
+  
 
   h1{
     color:#e6d32b;
   }
+  h3{
+    color:#e6d32b;
+  }
+  h4{
+    color:#f1f1f1;
+    
+  }
   div#signLog{
     background-color: #3c3c3c;
     padding: 1px;
+    box-shadow: 0 30px 40px rgba(#3c3c3c);
   }
   
   .topnav {
@@ -41,7 +47,7 @@ body {
   }
   
   .topnav a.active {
-    background-color: #4c4b47;
+    background-color:  #3c3c3c;
     color: rgb(160, 228, 114);
   }
   .searchField {
@@ -92,7 +98,7 @@ button:hover {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */
   padding:5px;
   border-radius: 5px;
 }
@@ -108,9 +114,22 @@ button:hover {
 .imgcontainer {
   position: relative;
   float:left;
+  margin:9px;
+  padding:10px;
+  border-color: #5f2121 10px;
+  border-radius: 10px;
+  background-color: #215b5f;
+  box-shadow: 10px 10px 10px 10px;
+  
+  
+}
+.reviewimgcontainer {
+  position: relative;
+  float:left;
   margin:5px;
   padding:10px;
   border-color: #5f2121 10px;
+  border-radius: 10px;
   background-color: #5f2121;
   box-shadow: 10px 10px 10px 10px;
   
@@ -132,6 +151,12 @@ button:hover {
 .imgcontainer:hover {
   position:relative;
   transition: .5s ease;
+  background-color: rgb(166, 38, 38);
+  cursor: pointer;
+}
+.reviewimgcontainer:hover {
+  position:relative;
+  transition: .5s ease;
   background-color: rgb(166, 127, 38);
   cursor: pointer;
 }
@@ -139,26 +164,29 @@ button:hover {
 .imgcontainer:hover .image {
   position:relative;
   opacity: 0.3;
+  transition: .5s ease;
 }
 
 .imgcontainer:hover .middle {
   position:relative;
   opacity: 1;
 }
+.imgcontainer:hover .text {
+  position:relative;
+  opacity: 1;
+  background-color: rgb(207, 159, 47);
+}
+
 
 .middle {
   transition: .5s ease;
-  opacity: 0;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  opacity: 100;
   text-align: center;
 }
 
 .text {
-  
-  background-color: rgb(166, 127, 38);
+  border-radius: 10px;
+  background-color: rgb(161, 93, 144);
   color: rgb(255, 255, 255);
   font-size: 16px;
   padding: 16px 32px;
@@ -166,8 +194,9 @@ button:hover {
 .sectionText {
   position:relative;
   background-color: #252525;
+  
   color: rgb(251, 210, 28);
   font-size: 30px;
   padding: 16px 32px;
-  box-shadow: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px;
 }
