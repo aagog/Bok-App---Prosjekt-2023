@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(241, 235, 206);
+    
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #5f2121;
+    stroke: 2px #5f2121;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #caba86;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(156, 141, 97);
+    color: rgb(254, 254, 254);
+  }
+  
+  .topnav a.active {
+    background-color: #4c4b47;
+    color: rgb(160, 228, 114);
+  }
+  .searchField {
+    margin-top:14px;
+
+  }
+
+  input[type=text] {
+    margin: 5px;
+    border-radius: 5px;
+    border-style: double;
+    border-color: #e6d32b;
+    stroke: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+button {
+    color: black;
+    border-radius: 5px;
+    border-style: double;
+    border-color: #e6d32b;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
