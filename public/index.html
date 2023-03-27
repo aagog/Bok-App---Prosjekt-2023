@@ -8,6 +8,7 @@
     
 </head>
 <body>
+  
 
     <div class="topnav">
         <a class="active" href="#home">Readicoulus</a>
@@ -20,15 +21,40 @@
         <button class="searchField">Search</button>
       </div>
       
-      <div style="padding-left:16px">
-        <h2>Top Navigation Example</h2>
-        <p>Some content..</p>
-      </div>
+      <button onclick="document.getElementById('signup').style.display='block'">Sign Up</button>
 
-      
+      <div id="signup" class="modal">
+        <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">readicolous</span>
+        <form class="modal-content">
+          <div class="container">
+            <h1> Sign Up</h1>
+            <p>Please fill in this form to create an account</p>
+            <hr>
 
-   
+            <label for="user"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="user" required>
 
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <br>
+            <label for="pswrd"><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="paswrd" required>
+            <br>
+            <label for="pswrd-repeat"><b>Repeat Password</b></label>
+            <input type="text" placeholder="Enter Password" name="paswrd-repeat" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Check it!
+            </label>
+            <div class="cancle">
+              <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signup">Sign Up</button>
+            </div>
+          </div>
+        </form>
     
-</body>
+        </div>
+
+
+  </body>
 </html>
