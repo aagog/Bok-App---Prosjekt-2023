@@ -7,7 +7,7 @@ body {
     
   }
 
-  p{
+  h4{
     color:#f1f1f1;
   }
 
@@ -15,7 +15,7 @@ body {
     color:#e6d32b;
   }
   div#signLog{
-    background-color: #1d4a27;
+    background-color: #3c3c3c;
     padding: 1px;
   }
   
@@ -75,7 +75,6 @@ button:hover {
 }
 
 .modal {
-  position:relative;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -90,7 +89,6 @@ button:hover {
 }
 
 .modal-content {
-  position:relative;
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
@@ -100,7 +98,6 @@ button:hover {
 }
 
 .close {
-  position:relative;
   right: 35px;
   top: 15px;
   font-size: 40px;
