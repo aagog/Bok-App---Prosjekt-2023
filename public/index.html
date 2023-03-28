@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css"   href="./CSS/index.css">
-    <title>Document</title>
+    <title>Readicolous</title>
+    
     
 </head>
 <body>
   
 
-    <div class="topnav" onclick="document.getElementById('signup').style.display='block'">
+    <div class="topnav">
         <a class="active" href="#home">Readicoulus</a>
         <a href="#feed">Feed</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#reviews" class="reviews" onclick="document.getElementById('addReview').style.display='block'">Reviews</a>
         <a href="#genre">Genres</a>
         <a href="#user">My Books</a>
         <a href="#user">User</a>
@@ -25,6 +26,39 @@
       
       <h4>Already have an account? Click here to log in <button onclick="document.getElementById('login').style.display='block'">Log in</button></h4>
     </div>
+    
+    <div id="addReview" class="modal">
+      <span onclick="document.getElementById('#reviews').style.display='none'" class="close" title="Close Modal">readicolous</span>
+      <form class="modal-content">
+        <div class="container">
+          
+<h2>Add a Review</h2>
+            <form>
+              <label for="username-input">Username:</label>
+              <input type="text" id="username-input" name="username">
+              <br>
+              <label for="book-input">Book:</label>
+              <input type="text" id="book-input" name="book">
+              <br>
+              <label for="author-input">Author:</label>
+              <input type="text" id="author-input" name="author">
+              <br>
+              <label for="rating-input">Rating:</label>
+              <input type="number" id="rating-input" name="rating" min="0" max="5" step="0.5">
+              <br>
+              <label for="text-input">Text:</label>
+              <textarea id="text-input" name="text"></textarea>
+              <br>
+              <button type="submit" onclick="document.getElementById('addReview').style.display='none'" class="cancelbtn">Post Review</button>
+            
+
+          <div class="cancle">
+            <button type="button" onclick="document.getElementById('addReview').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </div>
+      </form>
+      </div>
+
 
       <div id="signup" class="modal">
         <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">readicolous</span>
@@ -149,49 +183,73 @@
                 </div>
             </form>
 
-            <div class="reviews">
+            <div class="sectionText">Recent Reviews</div>
+            <div class="reviews-grid">
+              
               <div class="review">
-                <div class="reviewer">
-                  <img src="img/user.png" alt="Profile Picture">
-                  <h3>John Doe</h3>
-                </div>
-                <h4>Peter Pan</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod elit quis nulla bibendum ultricies. Morbi blandit est vel ante commodo, a molestie dolor sollicitudin.</p>
+                <h2>Review 1</h2>
+                <p>Username: John</p>
+                <p>Book: Harry Potter and the Philosopher's Stone</p>
+                <p>Author: J.K. Rowling</p>
+                <p>Rating: 4.5/5</p>
+                <p>Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="review">
-                <div class="reviewer">
-                  <img src="img/user.png" alt="Profile Picture">
-                  <h3>Jane Doe</h3>
-                </div>
-                <h4>The Jungle Book</h4>
-                <p>Nullam molestie, nulla nec auctor fringilla, urna nisi ullamcorper massa, eu posuere eros velit eget enim. Proin sagittis euismod quam.</p>
+                <h2>Review 2</h2>
+                <p>Username: Jane</p>
+                <p>Book: The Lord of the Rings</p>
+                <p>Author: J.R.R. Tolkien</p>
+                <p>Rating: 5/5</p>
+                <p>Text: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="review">
-                <div class="reviewer">
-                  <img src="img/user.png" alt="Profile Picture">
-                  <h3>Bob Smith</h3>
-                </div>
-                <h4>The Invisible Man</h4>
-                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
+                <h2>Review 3</h2>
+                <p>Username: Bob</p>
+                <p>Book: To Kill a Mockingbird</p>
+                <p>Author: Harper Lee</p>
+                <p>Rating: 4/5</p>
+                <p>Text: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
-              <div class="review">
-                <div class="reviewer">
-                  <img src="img/user.png" alt="Profile Picture">
-                  <h3>Bob Smith</h3>
-                </div>
-                <h4>Karius & Baktus</h4>
-                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
-              </div>
-              <div class="review">
-                <div class="reviewer">
-                  <img src="img/user.png" alt="Profile Picture">
-                  <h3>Bob Smith</h3>
-                </div>
-                <h4>It</h4>
-                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
-              </div>
+              
             </div>
             
+          <script>
+            const form = document.querySelector('form');
+const reviewsGrid = document.querySelector('.reviews-grid');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  // Get the values from the form
+  const username = event.target.elements.username.value;
+  const book = event.target.elements.book.value;
+  const author = event.target.elements.author.value;
+  const rating = event.target.elements.rating.value;
+  const text = event.target.elements.text.value;
+
+  // Create a new review element
+  const newReview = document.createElement('div');
+  newReview.classList.add('review');
+  newReview.innerHTML = `
+    <h2>New Review</h2>
+    <p>Username: ${username}</p>
+    <p>Book: ${book}</p>
+    <p>Author: ${author}</p>
+    <p>Rating: ${rating}/5</p>
+    <p>Text: ${text}</p>
+  `;
+
+  // Add the new review to the grid
+  reviewsGrid.appendChild(newReview);
+
+  // Clear the form inputs
+  event.target.elements.username.value = '';
+  event.target.elements.book.value = '';
+  event.target.elements.author.value = '';
+  event.target.elements.rating.value = '';
+  event.target.elements.text.value = '';
+});
+          </script>
             
             
             
@@ -215,23 +273,7 @@
                   </div>
                 </footer>
 
-                <script>
-                  // You can use JavaScript to dynamically add reviews to the HTML
-const reviewsContainer = document.querySelector('.reviews');
-
-const newReview = `
-  <div class="review">
-    <div class="reviewer">
-      <img src="profile-pic-4.jpg" alt="Profile Picture">
-      <h3>Samantha Lee</h3>
-    </div>
-    <p>Phasellus quis eros mauris. In hac habitasse platea dictumst. Integer finibus pharetra ex non maximus. Nam non velit vel enim mollis sodales ac quis dolor.</p>
-  </div>
-`;
-
-reviewsContainer.insertAdjacentHTML('beforeend', newReview);
-
-                </script>
+                
                 
 
 </div>
