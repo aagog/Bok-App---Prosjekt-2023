@@ -250,28 +250,26 @@ footer nav ul li a:hover {
   text-decoration: underline;
 }
 .reviews {
-  background-color: #f7f7f7;
-  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .review {
-  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 5px;
   padding: 20px;
-  margin-bottom: 30px;
-  height: 200px;
+  background-color: #5f2123;
 }
 
-.quote {
-  font-size: 18px;
-  line-height: 1.4;
-  margin-bottom: 20px;
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.author {
-  font-style: italic;
+.reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
-
-.reviews .container {
-  max-width:relative;}

@@ -108,75 +108,90 @@
           <div class="text">The Dunwhich Horror</div>
         </div>
         </div>
-        <div class="imgcontainer">
-          <img src="img\lurking.jpg" alt="" style="height:400px">    
+        <div class="imgcontainer" onclick="this.classList.toggle('active')">
+          <img src="img\lurking.jpg" alt="" style="height:400px">  
+          <div class="info">"The Lurking Fear" is a horror short story by American writer H. P. Lovecraft.
+             Written in November 1922, it was first published in the January through April 1923 issues of Home Brew.</div>  
           <div class="middle">
             <div class="text">The Lurking Fear</div>
           </div>
           </div>
-          <div class="imgcontainer">
+          <div class="imgcontainer" onclick="this.classList.toggle('active')">
             <img src="img\mountain.jpg" alt="" style="height:400px">
+            <div class="info">At the Mountains of Madness is a science fiction-horror novella
+               by American author H.P. Lovecraft, written in February/March 1931 and rejected 
+               that year by Weird Tales editor Farnsworth Wright on the grounds of its length.
+                It was originally serialized in the February, March, and April 1936 issues of
+                 Astounding Stories. It has been reproduced in numerous collections..</div>  
             <div class="middle">
               <div class="text">At The Mountains of Madness</div>
             </div>
             </div>
-            <div class="imgcontainer">
-              <img src="img\mythos.jpg" alt="" style="height:400px">   
+            <div class="imgcontainer" onclick="this.classList.toggle('active')">
+              <img src="img\mythos.jpg" alt="" style="height:400px">  
+              <div class="info">The Cthulhu Mythos was H.P. Lovecraft's greatest 
+                contribution to supernatural literature: a series of stories that 
+                evoked cosmic awe and terror through their accounts of incomprehensibly 
+                alien monsters and their horrifying incursions into our world.</div>   
               <div class="middle">
                 <div class="text">Cthulhu Mythos Tales</div>
               </div>
               </div>
-              <div class="imgcontainer">
+              <div class="imgcontainer" onclick="this.classList.toggle('active')">
                 <img src="img\time.jpg" alt="" style="height:400px"> 
+                <div class="info">The Shadow Out of Time is a novella by American horror
+                   fiction writer H.P. Lovecraft. Written between November 1934 and February
+                    1935, it was first published in the June 1936 issue of Astounding Stories.
+                     The story describes time and space travel by mind transfer. </div>  
                 <div class="middle">
                   <div class="text">The Shadow Out of Time</div>
                 </div>  
                 </div>
             </form>
 
-            <section class="reviews">
-              <div class="container">
-                <h2>Customer Reviews</h2>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus mauris, at blandit risus. Mauris mattis auctor magna eget posuere.&rdquo;</p>
-                      <p class="author">- John Doe</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Fusce et augue vitae nunc malesuada varius. Fusce tempus auctor turpis a pulvinar. Nulla eget est vitae quam ullamcorper placerat.&rdquo;</p>
-                      <p class="author">- Jane Doe</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Donec a enim sed orci pulvinar suscipit eu ac dolor. Nunc rutrum, odio vel suscipit efficitur, purus metus eleifend risus, a posuere enim lectus sit amet enim.&rdquo;</p>
-                      <p class="author">- Bob Smith</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Vestibulum vel odio eleifend, bibendum quam eget, lobortis enim. Duis malesuada euismod justo in lacinia. Proin eget quam id urna volutpat aliquet.&rdquo;</p>
-                      <p class="author">- Sarah Johnson</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Praesent quis urna at tellus consequat consequat. Aliquam faucibus nec leo sed sollicitudin. In sagittis iaculis ex, in molestie lorem venenatis et.&rdquo;</p>
-                      <p class="author">- Alex Wong</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="review">
-                      <p class="quote">&ldquo;Nam eget feugiat dolor, eu rhoncus justo. Nam volutpat, lacus non pulvinar ultricies, elit elit placerat nibh, quis iaculis elit nisi eu arcu.&rdquo;</p>
-                      <p class="author">- Mark Johnson</p>
-                    </div>
-                  </div>
+            <div class="reviews">
+              <div class="review">
+                <div class="reviewer">
+                  <img src="img/user.png" alt="Profile Picture">
+                  <h3>John Doe</h3>
                 </div>
+                <h4>Peter Pan</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod elit quis nulla bibendum ultricies. Morbi blandit est vel ante commodo, a molestie dolor sollicitudin.</p>
               </div>
-            </section>
+              <div class="review">
+                <div class="reviewer">
+                  <img src="img/user.png" alt="Profile Picture">
+                  <h3>Jane Doe</h3>
+                </div>
+                <h4>The Jungle Book</h4>
+                <p>Nullam molestie, nulla nec auctor fringilla, urna nisi ullamcorper massa, eu posuere eros velit eget enim. Proin sagittis euismod quam.</p>
+              </div>
+              <div class="review">
+                <div class="reviewer">
+                  <img src="img/user.png" alt="Profile Picture">
+                  <h3>Bob Smith</h3>
+                </div>
+                <h4>The Invisible Man</h4>
+                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
+              </div>
+              <div class="review">
+                <div class="reviewer">
+                  <img src="img/user.png" alt="Profile Picture">
+                  <h3>Bob Smith</h3>
+                </div>
+                <h4>Karius & Baktus</h4>
+                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
+              </div>
+              <div class="review">
+                <div class="reviewer">
+                  <img src="img/user.png" alt="Profile Picture">
+                  <h3>Bob Smith</h3>
+                </div>
+                <h4>It</h4>
+                <p>Duis malesuada bibendum tellus, euismod tempor diam tincidunt sed. Vivamus eget efficitur lorem, a vestibulum ex. Donec aliquam imperdiet enim, vitae aliquam nunc blandit in.</p>
+              </div>
+            </div>
+            
             
             
             
@@ -185,7 +200,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-6">
-                        <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+                        <p>&copy; 2023 Readicolous.  All Rights Reserved.</p>
                       </div>
                       <div class="col-md-6">
                         <nav>
@@ -199,6 +214,24 @@
                     </div>
                   </div>
                 </footer>
+
+                <script>
+                  // You can use JavaScript to dynamically add reviews to the HTML
+const reviewsContainer = document.querySelector('.reviews');
+
+const newReview = `
+  <div class="review">
+    <div class="reviewer">
+      <img src="profile-pic-4.jpg" alt="Profile Picture">
+      <h3>Samantha Lee</h3>
+    </div>
+    <p>Phasellus quis eros mauris. In hac habitasse platea dictumst. Integer finibus pharetra ex non maximus. Nam non velit vel enim mollis sodales ac quis dolor.</p>
+  </div>
+`;
+
+reviewsContainer.insertAdjacentHTML('beforeend', newReview);
+
+                </script>
                 
 
 </div>
