@@ -20,7 +20,7 @@ body {
     
   }
   div#signLog{
-    background-color: #3c3c3c;
+    background-color: #2a2929;
     padding: 1px;
     box-shadow: 0 30px 40px rgba(#3c3c3c);
   }
@@ -119,7 +119,8 @@ button:hover {
   border-color: #5f2121 10px;
   border-radius: 10px;
   background-color: #215b5f;
-  box-shadow: 10px 10px 10px 10px;
+  box-shadow: rgb(115, 89, 27) 10px 10px 10px 10px;
+  
   
   
 }
@@ -177,6 +178,25 @@ button:hover {
   background-color: rgb(207, 159, 47);
 }
 
+.imgcontainer .info {
+  visibility: hidden;
+  width: 200px;
+  background-color: #5555559f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.imgcontainer.active .info {
+  visibility: visible;
+}
+
 
 .middle {
   transition: .5s ease;
@@ -200,3 +220,58 @@ button:hover {
   padding: 16px 32px;
   box-shadow: 10px 10px 10px;
 }
+
+footer {
+  background-color: #f7f7f7;
+  color: #666;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer nav ul li {
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.reviews {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.review {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.quote {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-style: italic;
+}
+
+.reviews .container {
+  max-width:relative;}

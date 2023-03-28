@@ -98,8 +98,12 @@
 
         <form class="featured">
           <div class="sectionText">Featured</div>
-        <div class="imgcontainer">
+        <div class="imgcontainer" onclick="this.classList.toggle('active')">
         <img src="img\dunwich.jpg" alt="" style="height:400px">
+        <div class="info">"The Dunwich Horror" is a horror novella by American writer H. P. Lovecraft.
+           Written in 1928, it was first published in the April 1929 issue of Weird Tales (pp. 481–508).
+            It takes place in Dunwich, a fictional town in Massachusetts.
+             It is considered one of the core stories of the Cthulhu Mythos.</div>
         <div class="middle">
           <div class="text">The Dunwhich Horror</div>
         </div>
@@ -119,7 +123,7 @@
             <div class="imgcontainer">
               <img src="img\mythos.jpg" alt="" style="height:400px">   
               <div class="middle">
-                <div class="text">The Complete Mythos</div>
+                <div class="text">Cthulhu Mythos Tales</div>
               </div>
               </div>
               <div class="imgcontainer">
@@ -130,75 +134,72 @@
                 </div>
             </form>
 
-            <form class="review">
-              <div class="sectionText">Reviews</div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>50 Shades of Grey</p>
-            <h4>Tried a new book</h4>
-            <h4>Not what I expected from a color science book</h4>
-            </div><div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Karius og Baktus</p>
-            <h4>Had some cool images, but</h4>
-            <h4>the book was in a different language</h4>
-            </div><div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-            <div class="reviewimgcontainer">
-              <h3>BookReader42</h3>
-            <img src="img\user.png" alt="" style="height:75px"> 
-            <p>Pride & Predjudice</p>
-            <h4>This book left me petrefied</h4>
-            <h4>I'm not sure why I even signed up here</h4>
-            </div>
-                </form>
+            <section class="reviews">
+              <div class="container">
+                <h2>Customer Reviews</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in finibus mauris, at blandit risus. Mauris mattis auctor magna eget posuere.&rdquo;</p>
+                      <p class="author">- John Doe</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Fusce et augue vitae nunc malesuada varius. Fusce tempus auctor turpis a pulvinar. Nulla eget est vitae quam ullamcorper placerat.&rdquo;</p>
+                      <p class="author">- Jane Doe</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Donec a enim sed orci pulvinar suscipit eu ac dolor. Nunc rutrum, odio vel suscipit efficitur, purus metus eleifend risus, a posuere enim lectus sit amet enim.&rdquo;</p>
+                      <p class="author">- Bob Smith</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Vestibulum vel odio eleifend, bibendum quam eget, lobortis enim. Duis malesuada euismod justo in lacinia. Proin eget quam id urna volutpat aliquet.&rdquo;</p>
+                      <p class="author">- Sarah Johnson</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Praesent quis urna at tellus consequat consequat. Aliquam faucibus nec leo sed sollicitudin. In sagittis iaculis ex, in molestie lorem venenatis et.&rdquo;</p>
+                      <p class="author">- Alex Wong</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="review">
+                      <p class="quote">&ldquo;Nam eget feugiat dolor, eu rhoncus justo. Nam volutpat, lacus non pulvinar ultricies, elit elit placerat nibh, quis iaculis elit nisi eu arcu.&rdquo;</p>
+                      <p class="author">- Mark Johnson</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            
+            
     
-
-<div class="footer">
-  <footer class="page-width float-break">
-  <h1>About us</h1>
-  <h1>About us</h1>
-  <h1>About us</h1>
-  <h1>About us</h1>
-  
-  </footer>
-  </div>
-  
+                <footer>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+                      </div>
+                      <div class="col-md-6">
+                        <nav>
+                          <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+                
 
 </div>
 
