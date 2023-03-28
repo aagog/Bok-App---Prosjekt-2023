@@ -222,8 +222,8 @@ button:hover {
 }
 
 footer {
-  background-color: #f7f7f7;
-  color: #666;
+  background-color: #ede7e7;
+  color: #252525;
   padding: 20px;
   text-align: center;
 }
@@ -259,7 +259,7 @@ footer nav ul li a:hover {
 }
 /*Review box*/
 .review {
-  background-color: #215b5f;
+  background-color: #6fa4a8;
   padding: 20px;
   border-radius: 5px;
   border-color: whitesmoke 2px;

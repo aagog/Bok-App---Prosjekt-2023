@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css"   href="./CSS/index.css">
-    <title>Readicolous</title>
-    
-    
+    <title>Readicolous</title>  
 </head>
 <body>
   
 
     <div class="topnav">
         <a class="active" href="#home">Readicoulus</a>
-        <a href="#feed">Feed</a>
-        <a href="#reviews" class="reviews" onclick="document.getElementById('addReview').style.display='block'">Reviews</a>
-        <a href="#genre">Genres</a>
-        <a href="#user">My Books</a>
-        <a href="#user">User</a>
+        <a href="#feed">MyFeed</a>
+        <a href="#Reviews" class="reviews" onclick="document.getElementById('addReview').style.display='block'" onclick="imgContainer.classList.toggle('active')">Add Review</a>
+        <a href="#Bookclub">The Bookclub</a>
+        <a href="#MyBook">My Books</a>
+        <a href="#MyProfile">My Profile</a>
         <input class="searchField" type="text" placeholder=" Write Something">
         <button class="searchField">Search</button>
       </div>
@@ -129,7 +127,7 @@
         </div>
 
 
-
+        
         <form class="featured">
           <div class="sectionText">Featured</div>
         <div class="imgcontainer" onclick="this.classList.toggle('active')">
@@ -187,24 +185,21 @@
             <div class="reviews-grid">
               
               <div class="review">
-                <h2>Review 1</h2>
-                <p>Username: John</p>
+                <h4>John</h4>
                 <p>Book: Harry Potter and the Philosopher's Stone</p>
                 <p>Author: J.K. Rowling</p>
                 <p>Rating: 4.5/5</p>
                 <p>Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="review">
-                <h2>Review 2</h2>
-                <p>Username: Jane</p>
+                <h4>Jane</h4>
                 <p>Book: The Lord of the Rings</p>
                 <p>Author: J.R.R. Tolkien</p>
                 <p>Rating: 5/5</p>
                 <p>Text: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="review">
-                <h2>Review 3</h2>
-                <p>Username: Bob</p>
+                <h4>Bob</h4>
                 <p>Book: To Kill a Mockingbird</p>
                 <p>Author: Harper Lee</p>
                 <p>Rating: 4/5</p>
@@ -215,7 +210,7 @@
             
           <script>
             const form = document.querySelector('form');
-const reviewsGrid = document.querySelector('.reviews-grid');
+            const reviewsGrid = document.querySelector('.reviews-grid');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -231,24 +226,37 @@ form.addEventListener('submit', (event) => {
   const newReview = document.createElement('div');
   newReview.classList.add('review');
   newReview.innerHTML = `
-    <h2>New Review</h2>
-    <p>Username: ${username}</p>
+    <h4>Username: ${username}</h4>
     <p>Book: ${book}</p>
     <p>Author: ${author}</p>
     <p>Rating: ${rating}/5</p>
     <p>Text: ${text}</p>
   `;
 
-  // Add the new review to the grid
+  // Legger til ny anmeldelse i grid'en
   reviewsGrid.appendChild(newReview);
 
-  // Clear the form inputs
+  // Resetter anmeldelse formen
   event.target.elements.username.value = '';
   event.target.elements.book.value = '';
   event.target.elements.author.value = '';
   event.target.elements.rating.value = '';
   event.target.elements.text.value = '';
 });
+
+/*
+//Lagrer til local storage
+function saveReviewToLocalStorage(review) {
+  localStorage.setItem('review', review);
+  
+}
+
+//Infoboksen på bildene forsvinner når musepekeren forlater bildet
+const modal = document.getElementById("info");
+  modal.addEventListener("mouseleave", () => {
+    modal.style.display = "none";
+  });
+*/
           </script>
             
             
